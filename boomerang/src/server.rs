@@ -253,6 +253,7 @@ impl<B: BoomerangConfig> CollectionS<B> {
             c_m.m2.s_proof,
             key_pair.s_key_pair.tag_key,
             c_m.m2.sig.clone(),
+            c_m.m2.prev_gens.generators.clone(),
         );
 
         if !check2 {
